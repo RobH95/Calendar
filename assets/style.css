@@ -6,7 +6,9 @@ body {
 
 
 .starttime {
-  background-color: #06aed5;
+  background-color:whitesmoke ;
+  position: absolute;
+  left: 50px;
 }
 
 textarea {
