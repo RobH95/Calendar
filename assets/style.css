@@ -4,6 +4,11 @@ body {
   line-height: 1;
 }
 
+
+.starttime {
+  background-color: #06aed5;
+}
+
 textarea {
   background: transparent;
   border: none;

@@ -18,78 +18,96 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </head>
 
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="displayDate" class="lead"></p>
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+      <span class="starttime">9AM</span>
+      <div id="timeSlot9" class="time">
+        <textarea name="textarea" id="textArea9" cols="32" rows="4"></textarea>
+        <button id="submit9">Save</button>
       </div>
-       
     </div>
     <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+      <span class="starttime">10AM</span>
+      <div id="timeSlot10" class="time">
+        <textarea name="textarea" id="textArea10" cols="32" rows="4"></textarea>
+        <button id="submit10">Save</button>
       </div>
-       
     </div>
+       
     <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+      <span class="starttime">11AM</span>
+      <div id="timeSlot11" class="time">
+        <textarea name="textarea" id="textArea11" cols="32" rows="4"></textarea>
+        <button id="submit11">Save</button>
       </div>
+    </div>
        
-    </div> <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+    <div class="container">
+      <span class="starttime">12PM</span>
+      <div id="timeSlot12" class="time">
+        <textarea name="textarea" id="textArea12" cols="32" rows="4"></textarea>
+        <button id="submit12">Save</button>
       </div>
+    </div>
        
-    </div> <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+    <div class="container">
+      <span class="starttime">1PM</span>
+      <div id="timeSlot13" class="time">
+        <textarea name="textarea" id="textArea13" cols="32" rows="4"></textarea>
+        <button id="submit13">Save</button>
       </div>
+    </div>
        
-    </div> <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+    <div class="container">
+      <span class="starttime">2PM</span>
+      <div id="timeSlot14" class="time">
+        <textarea name="textarea" id="textArea14" cols="32" rows="4"></textarea>
+        <button id="submit14">Save</button>
       </div>
-       
-    </div> <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+    </div>
+    
+    <div class="container">
+      <span class="starttime">3PM</span>
+      <div id="timeSlot15" class="time">
+        <textarea name="textarea" id="textArea15" cols="32" rows="4"></textarea>
+        <button id="submit15">Save</button>
       </div>
+    </div>
        
-    </div> <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="timeSlot" class="time">
-        <textarea name="textarea" id="textArea" cols="3" rows="1"></textarea>
-        <button disabled="disabled"></button>
+    <div class="container">
+      <span class="starttime">4PM</span>
+      <div id="timeSlot16" class="time">
+        <textarea name="textarea" id="textArea16" cols="32" rows="4"></textarea>
+        <button id="submit16">Save</button>
       </div>
-       
+    </div>
+    
+    <div class="container">
+      <span class="starttime">5PM</span>
+      <div id="timeSlot17" class="time">
+        <textarea name="textarea" id="textArea17" cols="32" rows="4"></textarea>
+        <button id="submit17">Save</button>
+      </div>
     </div>
 
+
+    <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    -->
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
