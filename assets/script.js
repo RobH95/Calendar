@@ -11,6 +11,9 @@ for (let i=9; i<18; i++) {
     
     // Set hour to the current hour using moment (24hr)
     let hour = moment().hour();
+
+    // for testing
+    //let hour = 14;
     if (i == hour) { // If i is the current hour
         textArea.css('background-color', 'red'); // set colour as red
     } else if (i > hour) {
